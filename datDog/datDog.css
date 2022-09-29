@@ -4,20 +4,28 @@ body {
 }
 
 nav {
-
+padding:20px;
+background-color : rgb(2, 134, 200);
+border-radius: 75px;
+margin-bottom: 20px;
 }
 
 #mainContent {
     background-color: rgb(245, 253, 159);
     border-color: rgb(2, 134, 200);
     align-items: center;
+    border-radius: 5px;
 }
 
 main {
     align-items: center;
 }
 
-img {width: 100%}
+img {
+    width: 100%;
+    border-radius: 75px;
+ 
+}
 
 .datDog {
  font-family: unset;
