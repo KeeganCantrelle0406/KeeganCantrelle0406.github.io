@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(252, 60, 60);
+    padding: 25px 300px;
+}
+
+nav {
+
+}
+
+#mainContent {
+    background-color: rgb(245, 253, 159);
+    border-color: rgb(2, 134, 200);
+    align-items: center;
+}
+
+main {
+    align-items: center;
+}
+
+img {width: 100%}
+
+.datDog {
+ font-family: unset;
+ color: rgb(32, 111, 159);
+}
