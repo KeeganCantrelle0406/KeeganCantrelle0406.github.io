@@ -31,3 +31,12 @@ img {
  font-family: unset;
  color: rgb(32, 111, 159);
 }
+
+h1 {
+    text-align: center;
+  }
+
+  #datTitle {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+  }
