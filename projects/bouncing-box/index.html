@@ -61,7 +61,7 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
+			var positionX = 0
 
 			
 			/* 
@@ -70,8 +70,9 @@
 			turn it around! 
 			*/
 			function update() {
+				positionX = positionX + 10;
+				moveBoxTo(positionx);
 				
-
 			};
 
 			/* 
@@ -80,7 +81,7 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
+				positionX = 0;
 
 
 			};
