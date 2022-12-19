@@ -8,13 +8,13 @@
     
     window.opspark.makeGround = function(app) {
         var ground;
-        
+
         ground = new createjs.Container();
         ground.resize = resize;
         render();
         
         app.addResizeable(ground);
-        ground.y = (canvas.height - ground.getBounds().height) / 2;
+        ground.y = (canvas.height - ground.getBounds().height) / 1.2;
         app.view.addChild(ground);
         
         function render() {

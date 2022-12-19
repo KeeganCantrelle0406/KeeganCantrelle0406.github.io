@@ -22,15 +22,22 @@ var level01 = function (window) {
             ]
         };
         window.levelData = levelData;
-        // set this to true or false depending on if you want to see hitzones
+        // set this to true or fatrue);lse depending on if you want to see hitzones
         game.setDebugMode(true);
 
         // TODO 6 and on go here
         // BEGIN EDITING YOUR CODE HERE
-
-        
-        
-        
+        function creatSawBlade(x, y){
+        var hitZoneSize = 25;
+            var damageFromObstacle = 10;
+            var sawBladeHitZone = game.creatObstacle(hitZoneSize, damageFromObstacle);
+            sawBladeHitZone.x = x;
+            sawBladeHitZone.y = y;
+            game.addGameItem (sawBladeHitZone);
+            var obstacleImage = draw.bitmap ("img/sawblade.png")
+            sawBladeHitZone.addChild(obstacleImage)
+        }
+            creatSawBlade (800, 230)
         // DO NOT EDIT CODE BELOW HERE
     }
 };
