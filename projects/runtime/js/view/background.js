@@ -149,7 +149,11 @@ var background = function (window) {
                 rock5.x = canvasWidth
             }
             // TODO 5: Part 2 - Parallax
-            
+            for (var i = 0; i < buildings.length; i++){
+                var eachElement = buildings[i]
+                eachElement.x = eachElement.x - 0.25
+            }
+           
 
         } // end of update function - DO NOT DELETE
         
