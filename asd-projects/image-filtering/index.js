@@ -51,9 +51,10 @@ function applyFilterNoBackground(filterFunction){
   var backgroundColor = image[0][0];
   for (var i = 0; i < image.length; i++){
     for(var j = 0; j < image[i].length; j++){
-      var rgbString = image[i][j];
-     
-      if (rgbString !== backgroundColor){
+      if (image[i][j] === backgroundColor){
+        image[i][j] === backgroundColor;
+      } else {
+        var rgbString = image[i][j];
         var rgbNumbers = rgbStringToArray(rgbString);
         filterFunction(rgbNumbers);
         rgbString = rgbArrayToString(rgbNumbers);
@@ -66,7 +67,8 @@ function applyFilterNoBackground(filterFunction){
  
 // TODO 5: Create the keepInBounds function
 function keepInBounds (value) {
-  value < 0 ? 0 : value > 255 ? 255 : value 
+  var temp = value < 0 ? 0 : value;
+  return temp > 255 ? 255 : temp 
 }
 
 // TODO 3: Create reddify function
@@ -75,11 +77,15 @@ function reddify(colorsArr) {
 }
 
 // TODO 6: Create more filter functions
+
+//decreases the amount of blue
 function decreaseBlue (Blue){
-  Blue[0] = keepInBounds(BLUE - 50);
+  Blue[BLUE] = keepInBounds(BLUE - 50);
  }
+
+ //increases green and blue by the same amount
  function increaseGreenByBlue (greeny){
-  greeny[0] = keepInBounds(BLUE + GREEN);
+  greeny[GREEN] = keepInBounds(BLUE + GREEN);
  }
  
 
