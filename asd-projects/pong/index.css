@@ -1,16 +1,16 @@
 
 body {
-  background-color: darkgreen;
+  background-color: rgb(105, 228, 234);
 }
 
 #board {
   width: 440px;
   height: 440px;
   border: 1px solid white;
-  background-color: black;
+  background-color: rgb(91, 186, 44);
   position: relative;
 }
-
+/*
 #gameItem {
   background-color: teal;
   width: 50px;
@@ -18,4 +18,43 @@ body {
   position: absolute;
 /*   left: 100px; */  /* Uncomment if you want to set a "starting" position */
 /*   top: 100px;  */  /* Uncomment if you want to set a "starting" position */
+
+
+#paddle1 {
+  /* appearance */
+  background-color: darkgreen;
+  width: 20px;
+  height: 80px;
+  border-radius: 10px;
+
+  /* positioning */
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+
+#paddle2 {
+  /* appearance */
+  background-color: darkgreen;
+  width: 20px;
+  height: 80px;
+  border-radius: 10px;
+
+  /* positioning */
+  position: absolute;
+  top: 200px;
+  left: 150px;
+}
+
+#ball {
+  /* appearance */
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+
+  /* positioning */
+  position: absolute;
+  top: 100px;
+  left: 100px;
 }
