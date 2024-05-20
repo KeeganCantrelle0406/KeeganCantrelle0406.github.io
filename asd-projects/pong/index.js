@@ -157,11 +157,17 @@ function runProgram() {
   function ballBorderCollision(ball) {
     if (ball.positionX <= BORDER_LEFT - ball.width) {
       P2SCORE++;
+      if (P2SCORE === 11){
+        endGame()
+      }
       ball.positionX = 735; //  starting position X
       ball.positionY = 250; // starting position Y
       ball.speedX = bounce * 5;
     } else if (ball.positionX >= BORDER_RIGHT) {
       P1SCORE++;
+      if (P1SCORE === 11){
+        endGame()
+      }
       ball.positionX = 735; //  starting position X
       ball.positionY = 250; // starting position Y
       ball.speedX = bounce * 5;
